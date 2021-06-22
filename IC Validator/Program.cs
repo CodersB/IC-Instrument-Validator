@@ -32,8 +32,9 @@ namespace IC_Validator
                 IInstruments instrument = factory.CreateInstrument();
 
                 Console.WriteLine(instrument.Validate(pin, volts) == true ? "Validation Succeeded." : "Validation Failed.");
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
